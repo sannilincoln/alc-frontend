@@ -1,0 +1,16 @@
+<% include partials/layout.ejs %>
+    	 
+      	 <div>
+		<ul>
+			<li><%=justStudent.firstname%></li>
+			<li><%=justStudent.lastname%></li>
+			<li><%=justStudent.address%></li>
+			<li><%=justStudent.dob%></li>
+		</ul>
+
+		<button><a href="editStudent/<%=justStudent._id%>">edit</a></button>
+  	
+
+      	 </div>
+
+<% include partials/footer.ejs %>

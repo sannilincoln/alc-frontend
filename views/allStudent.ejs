@@ -1,0 +1,34 @@
+<% include partials/layout.ejs %>
+    	 
+      	 <div>
+
+
+	<table>
+  <thead>
+  	<tr>
+    <th>Firstanme</th>
+    <th>lastname</th>
+    <th>Date of Birth</th>
+    <th>Address</th>
+    <th>Sex</th>
+    <th>Class</th>
+    </tr>
+  </thead>
+  <tbody>
+  	<% students.forEach(function(result){%>
+  <tr>
+    <td><a href="<%=result._id%>"><%=result.firstname %></a></td>
+    <td><%=result.lastname %></td>
+    <td><%=result.dob %></td>
+    <td><%=result.address %></td>
+    <td><%=result.sex %></td>
+    <td><%=result.class %></td>
+  </tr>
+  </tbody>
+  <%});%>
+</table>
+	
+
+      	 </div>
+
+<% include partials/footer.ejs %>
