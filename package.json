@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index"
+    "start": "node index"
   },
   "author": "sanni lincoln sunday",
   "license": "ISC",
@@ -15,5 +15,8 @@
     "express-promise-router": "^2.0.0",
     "mongoose": "^4.12.1",
     "request": "^2.83.0"
+  },
+  "engines": {
+    "node": "6.11.2"
   }
 }

@@ -33,22 +33,14 @@ app.use(function (err, req, res, next) {
 });
 
 
-// initialize routes
-// app.use('/api', require('./routes/api'));
 
 app.use('/', router);
 
 
 
-// app.get('*', function(req,res,next){
-//   res.status(404).json({
-//     "message" : "page not found"
-//   });
-// });
+
 
 const port =process.env.PORT || 5000;
 app.listen(port);
 console.log('server started on port: ' + port );
-
-
 

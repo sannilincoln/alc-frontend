@@ -91,7 +91,7 @@ updateStudent: function(req,res, next){
 		};
 		request(entities, function(error,response,body){
 		if (!error && response.statusCode == 200){
-			res.redirect('/:id');	
+			res.redirect('/allStudent');	
 		}
 		if (error && response.statusCode == 400){
 			res.redirect('/editStudent/:id');
