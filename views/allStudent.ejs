@@ -24,7 +24,7 @@
     <td><%=result.sex %></td>
     <td><%=result.class %></td>
     <td>
-      <form action="http://localhost:5000/allStudent" method="POST">
+      <form action="https://alc-api-frontend.herokuapp.com/allStudent" method="POST">
         <input type="hidden" name="id" value="<%=result._id %>" />
         <input type="submit" value="Delete" />
       </form>
