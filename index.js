@@ -46,7 +46,7 @@ app.use('/', router);
 //   });
 // });
 
-port =process.env.port || 9000;
+const port =process.env.PORT || 5000;
 app.listen(port);
 console.log('server started on port: ' + port );
 

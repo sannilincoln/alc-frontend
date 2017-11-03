@@ -9,8 +9,9 @@
 
 		<div class="row">
 
-			<form class="form col-md-4" method="PUT" action="https://alc-api.herokuapp.com/api/students/<%=data._id%>">
+			<form class="form col-md-4" method="POST" action="http://localhost:5000/editStudent/<%=data._id%>">
 				<fieldset>
+					<input type="hidden" name="id" value="<%=data._id%>" />
 					<p class="h5 text-center mb-4"></p>
 					<div class="md-form">
 						<i class="fa fa-user prefix grey-text"></i>
@@ -48,7 +49,7 @@
 					</div>
 
 					<div class="text-center">
-						<button class="btn btn-light-green" onclick="put()" type="submit">Update
+						<button class="btn btn-light-green" type="submit" value="Submit">Update
 							<i class="fa fa-paper-plane-o ml-1"></i>
 						</button>
 					</div>
@@ -58,20 +59,6 @@
 
 
 	</ul>
-
-
-<script>
-	function put(){
-		$.ajax({
-			method : put,
-			
-		})
-	}
-</script>
-
-
-
-
 
 
 
