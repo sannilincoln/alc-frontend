@@ -1,6 +1,6 @@
 		<% include partials/layout.ejs %>
 		 
-		<div class="container col-md-5">
+		<div class="container col-md-5 pt-4">
 			<div class="jumbotron">
 				
 					<form class="form form-material" method="POST" action="https://alc-api-frontend.herokuapp.com/newStudent">
@@ -13,13 +13,13 @@
 					</div>
 
 					<div class="md-form">
-						<i class="fa fa-envelope prefix grey-text"></i>
+						<i class="fa fa-user prefix grey-text"></i>
 						<input type="text" id="form2" value="" name="lastname" class="form-control"required>
 						<label for="lastname">lastname</label>
 					</div>
 					<div class="md-form">
 						<i class="fa fa-phone prefix grey-text"></i>
-						<input type="date" id="form2" value="" name="dob" class="form-control"required>
+						<input type="date" id="form2" value="" name="dob" placeholder="Date of Birth" class="form-control"required>
 						<label for="dob"></label>
 					</div>
 
