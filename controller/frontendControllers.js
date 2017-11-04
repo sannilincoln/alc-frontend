@@ -79,7 +79,7 @@ updateStudent: function(req,res, next){
 		address: req.body.address,
 		sex: req.body.sex
 	};
-	console.log(data);
+	// console.log(data);
 	const entities = {
 		url: 'https://alc-api.herokuapp.com/api/students/' + studentInfo,
 		method: 'PUT',
@@ -100,7 +100,7 @@ updateStudent: function(req,res, next){
 },	
 deleteStudent: function(req,res, next){
 	const studentInfo = req.body.id;
-	console.log(studentInfo);
+	// console.log(studentInfo);
 	const entities = {
 		url: 'https://alc-api.herokuapp.com/api/students/' + studentInfo,
 		method: 'DELETE',
