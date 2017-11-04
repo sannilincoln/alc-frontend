@@ -2,23 +2,23 @@
     	 
  <div class="container pt-4" >
    <div class="jumbotron">
-      <h1 class="animated fadeIn mb-4 text-center">ALL STUDENT</h1>
+      <h1 class="animated fadeIn mb-4 text-center "> <strong>ALL STUDENT</strong> </h1>
     
         <div class="row">
             <% students.forEach(function(result){%>
       <div class="card col-md-4 ">
               <div class="card-body">
                   <!--Title-->
-                  <h2 class="card-title animated fadeIn">Student Info</h2>
+                  <h2 class="card-title animated fadeIn"> <strong> Student Info</strong> </h2>
                   <hr>
                   <div class="" style="display:grid">
                  
-                 <label class="animated fadeIn">Firstname:<%=result.firstname %></label>
-                 <label class="animated fadeIn">Lastname:<%=result.lastname %></label>
-                 <label class="animated fadeIn">Sex:<%=result.sex %></label>
-                 <label class="animated fadeIn">Address:<%=result.address %></label>
-                 <label class="animated fadeIn">Date of Birth:<%=result.dob %></label>
-                 <label class="animated fadeIn">Level:<%=result.class%></label>
+                 <label class="animated fadeIn">Firstname: <%=result.firstname %></label>
+                 <label class="animated fadeIn">Lastname: <%=result.lastname %></label>
+                 <label class="animated fadeIn">Sex: <%=result.sex %></label>
+                 <label class="animated fadeIn">Address: <%=result.address %></label>
+                 <!-- <label class="animated fadeIn">Date of Birth: <%=result.dob %></label> -->
+                 <label class="animated fadeIn">Level: <%=result.class%></label>
                    </div>
                  <div class="row">
                    <a href="<%=result._id%>" class="btn btn-primary btn-md">view</a>

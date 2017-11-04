@@ -6,7 +6,7 @@
 					 <form class="form form-material" method="POST" action="https://alc-api-frontend.herokuapp.com/editStudent/<%=data._id%>">
 						 <fieldset>
 							 <input type="hidden" name="id" value="<%=data._id%>" />
-							 <p class="h5 text-center mb-4"></p>
+							 <p class="h5 text-center mb-4">Edit Student Record</p>
 							 <div class="md-form">
 								 <i class="fa fa-user prefix grey-text"></i>
 								 <input type="text" id="form3" value="<%=data.firstname%>" name="firstname" value="<%=data.firstname%>" class="form-control" required>
@@ -19,25 +19,25 @@
 								 <label for="lastname"></label>
 							 </div>
 							 <div class="md-form">
-								 <i class="fa fa-phone prefix grey-text"></i>
+								 <i class="fa fa-calendar prefix grey-text"></i>
 								 <input type="date" id="form2" name="dob" value="<%=data.dob%>" class="form-control" required>
 								 <label for="dob"></label>
 							 </div>
 		 
 							 <div class="md-form">
-								 <i class="fa fa-phone prefix grey-text"></i>
+								 <i class="fa fa-address-card-o prefix grey-text"></i>
 								 <input type="text" id="form2" name="address" value="<%=data.address%>" class="form-control" required="">
 								 <label for="address"></label>
 							 </div>
 		 
 							 <div class="md-form">
-								 <i class="fa fa-phone prefix grey-text"></i>
+								 <i class="fa fa-genderless prefix grey-text"></i>
 								 <input type="text" id="form2" value="<%=data.sex%>" name="sex" class="form-control" required>
 								 <label for="sex"></label>
 							 </div>
 		 
 							 <div class="md-form">
-								 <i class="fa fa-phone prefix grey-text"></i>
+								<i class="fa fa-bar-chart prefix grey-text"></i>
 								 <input type="text" id="form2" value="<%=data.class%>" name="class" class="form-control" required>
 								 <label for="class"></label>
 							 </div>
