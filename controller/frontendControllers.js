@@ -31,7 +31,7 @@ editprofile: function(req,res, next){
 	request(url, function (error, response,body){
 	if (!error && response.statusCode == 200){
 		let data = JSON.parse(body);
-		//console.log(data);
+		// console.log(data);
 		res.render('editStudent', {data});
 		}
 	});
@@ -90,7 +90,7 @@ updateStudent: function(req,res, next){
 			body: data
 		};
 		request(entities, function(error,response,body){
-		if (!error && response.statusCode == 200){
+		if (!error && response.statusCode == 201){
 			res.redirect('/allStudent');	
 		}
 		if (error && response.statusCode == 400){
