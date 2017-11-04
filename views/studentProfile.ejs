@@ -1,16 +1,29 @@
 <% include partials/layout.ejs %>
     	 
-      	 <div>
-		<ul>
-			<li><%=justStudent.firstname%></li>
-			<li><%=justStudent.lastname%></li>
-			<li><%=justStudent.address%></li>
-			<li><%=justStudent.dob%></li>
-		</ul>
 
-		<button><a href="editStudent/<%=justStudent._id%>">edit</a></button>
-  	
 
-      	 </div>
+<div class="container  style="height: 10vh"">
+<div class="jumbotron"style="display:align-center">
+<h1 class="animated fadeIn mb-4 text-center">STUDENT PROFILE</h1>
+
+  
+	<div class="card col-md-6 ">
+	 <div class="card-body ">
+		 <!--Title-->
+		 <h2 class="card-title animated fadeIn text-center">Student Info</h2>
+		 <div class="" style="display:grid">
+		<label class="animated fadeIn">Firstname: <%=justStudent.firstname %></label>
+		<label class="animated fadeIn">Lastname: <%=justStudent.lastname %></label>
+		<label class="animated fadeIn">Sex: <%=justStudent.sex %></label>
+		<label class="animated fadeIn">Address: <%=justStudent.address %></label>
+		<label class="animated fadeIn">Date of Birth: <%=justStudent.dob %></label>
+		<label class="animated fadeIn">Level: <%=justStudent.class%></label>
+	</div>
+	<a href="editStudent/<%=justStudent._id%>"class="btn btn-primary btn-md">Edit</a>		 
+	 </div>
+		</div>
+
+</div>
+</div>
 
 <% include partials/footer.ejs %>

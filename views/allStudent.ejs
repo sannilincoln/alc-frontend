@@ -1,40 +1,40 @@
 <% include partials/layout.ejs %>
     	 
-      	 <div>
+ <div class="container  style="height: 10vh"">
+   <div class="jumbotron">
+      <h1 class="animated fadeIn mb-4 text-center">ALL STUDENT</h1>
+    
+        <div class="row">
+            <% students.forEach(function(result){%>
+      <div class="card col-md-4 ">
+              <div class="card-body">
+                  <!--Title-->
+                  <h2 class="card-title animated fadeIn">Student Info</h2>
+                  <hr>
+                  <div class="" style="display:grid">
+                 
+                 <label class="animated fadeIn">Firstname:<%=result.firstname %></label>
+                 <label class="animated fadeIn">Lastname:<%=result.lastname %></label>
+                 <label class="animated fadeIn">Sex:<%=result.sex %></label>
+                 <label class="animated fadeIn">Address:<%=result.address %></label>
+                 <label class="animated fadeIn">Date of Birth:<%=result.dob %></label>
+                 <label class="animated fadeIn">Level:<%=result.class%></label>
+                   </div>
+                 <div class="row">
+                   <a href="<%=result._id%>" class="btn btn-primary btn-md">view</a>
 
+                   <form action="https://alc-api-frontend.herokuapp.com/allStudent" method="POST">
+                    <input type="hidden" name="id" value="<%=result._id %>" />
+                    <input type="submit" class="btn btn-danger btn-md" value="Delete" />
+                  </form>
 
-	<table>
-  <thead>
-  	<tr>
-    <th>Firstanme</th>
-    <th>lastname</th>
-    <th>Date of Birth</th>
-    <th>Address</th>
-    <th>Sex</th>
-    <th>Class</th>
-    </tr>
-  </thead>
-  <tbody>
-  	<% students.forEach(function(result){%>
-  <tr>
-    <td><a href="<%=result._id%>"><%=result.firstname %></a></td>
-    <td><%=result.lastname %></td>
-    <td><%=result.dob %></td>
-    <td><%=result.address %></td>
-    <td><%=result.sex %></td>
-    <td><%=result.class %></td>
-    <td>
-      <form action="https://alc-api-frontend.herokuapp.com/allStudent" method="POST">
-        <input type="hidden" name="id" value="<%=result._id %>" />
-        <input type="submit" value="Delete" />
-      </form>
-    </td>
-  </tr>
-  </tbody>
-  <%});%>
-</table>
-	
-
-      	 </div>
+                </div>
+                                  
+              </div>
+                 </div>
+   <%});%>
+        </div>
+   </div>
+ </div>
 
 <% include partials/footer.ejs %>

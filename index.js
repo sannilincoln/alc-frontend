@@ -20,8 +20,8 @@ app.set('view engine', 'ejs');
 
 app.set('views', path.join(__dirname, "views"));
 // set up stattic files
-app.use(express.static('./public'));
 
+app.use(express.static(__dirname + '/public'));
 // middleware
 app.use(bodyParser.json());
 // for parsing application/xwww-

@@ -1,11 +1,18 @@
 <% include partials/layout.ejs %>
-<body>
+
+    <!-- Start your project here-->
+  
+            
+    <div style="height: 50vh">
+            <div class="flex-center flex-column">
+                <h1 class="animated fadeIn mb-4">WELCOME TO ALC 2.0 STUDENT RESOURCE</h1>
     
-<h1>welcome to IPaye student resources</h1>
-
-<div class="">
-<button><a href="newStudent">add new student</a></button>
-<button><a href="allStudent">view all students</a></button>
-</div>
-
-<% include partials/footer.ejs %>
+                    <ul>
+                        <a  href="newStudent" class="btn btn-primary btn-lg wow fadeInLeft" data-wow-delay="0.2s" rel="nofollow">Add New Student</a>
+                        <a  href="allStudent" class="btn btn-default btn-lg wow fadeInRight" data-wow-delay="0.2s" rel="nofollow">View All Student</a>
+                    </ul>
+            </div>
+        </div>
+            
+    <!-- /Start your project here-->
+    <% include partials/footer.ejs %>
