@@ -2,7 +2,7 @@
     	 
  <div class="container pt-4" >
    <div class="jumbotron">
-      <h1 class="animated fadeIn mb-4 text-center "> <strong>ALL STUDENT</strong> </h1>
+      <h1 class="animated fadeIn mb-4 text-center"> <strong>ALL STUDENT</strong> </h1>
     
         <div class="row">
             <% students.forEach(function(result){%>
@@ -25,7 +25,8 @@
 
                    <form action="https://alc-api-frontend.herokuapp.com/allStudent" method="POST">
                     <input type="hidden" name="id" value="<%=result._id %>" />
-                    <input type="submit" class="btn btn-danger btn-md" value="Delete" />
+                    <button type="submit" class="btn btn-danger btn-md" value="Delete" >Delete</button>
+
                   </form>
 
                 </div>
